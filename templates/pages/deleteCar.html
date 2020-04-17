@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Удаление транспортного средства</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Удаление транспортного средства</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="id" class="form__text"></label><h3 align="center">ID транспортного средства:&nbsp;<input type="text" name="id" id="id" class="form__input" size="40" maxlength="255"></h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Удалить</button>
+        <button name="back" value="back" class="new"><a href="/carsList/{{companyid}}">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

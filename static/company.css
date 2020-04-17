@@ -1,0 +1,77 @@
+body {background-color: rgba(237, 238, 240, 0.99)
+}
+h3 {color: #000000; font-size:18px; margin: auto;}
+input{margin: 15px 0px 0px 0px; outline: none;height: 20px;}
+input[type=text]:focus, input[type=password]:focus{margin: 15px 0px 0px 0px;color: rgba(0, 0, 0, 0.99)
+}
+table {width: 100%; border-collapse: separate; border-spacing: 4px; text-align:center;}
+table.new {border-collapse: separate; border-spacing: 4px; text-align:left;}
+th{color: rgba(0, 0, 0, 0.99); font-weight: bold;border-radius: 4px 4px 0 0;background: #4a76a8;}
+td {border: 1px solid #a7c0dd; border-radius: 4px; background: #c5d2dd
+}
+td:hover {background: #a7c0dd; transition-duration: 0.2s; margin: auto; table-layout:fixed;}
+a{text-decoration: none;color: #000000;}
+.header-h1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  .header-h1 h1 {
+    position: relative;
+    display: inline-block;
+    background: #EDEEF0;
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    border-bottom: .125rem solid #4a76a8;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #4a76a8;
+  }
+  .header-h1 h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1.25rem;
+    transform: translateX(-1.25rem);
+    border-top: 1.25rem solid #4a76a8;
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+  }
+  .header-h1 h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1.125rem;
+    transform: translateX(-1.25rem);
+    border-top: 1.25rem solid #EDEEF0;
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+  }
+#content{
+background: rgba(225, 233, 240, 0.99);
+width: 100%;
+max-width: 1024px;
+min-height: 100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+button.new{
+display: inline-block;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+background: #4A76A8;
+border-radius: 6px; font-family: "Times New Roman", sans-serif; font-size: 100%; font-weight: bolder;
+}
+#inputter{
+display: inline-block;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+background: #4A76A8;
+border-radius: 6px; font-family: "Times New Roman", sans-serif; font-size: 100%; font-weight: bolder;
+}
+input:focus{background-color: #A7C0DD;}
+textarea{background-color: #9eb9dd;}

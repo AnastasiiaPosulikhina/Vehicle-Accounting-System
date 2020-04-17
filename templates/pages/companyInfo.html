@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Информация о предприятии</title>
+</head>
+<body>
+<div id = "content">
+<h2>&nbsp;Информация о предприятии </h2>
+<table class="new">
+    <tr>
+        <th><b>Название</b></th>
+        <td>{% for n in name %}{{n}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Адрес</b></th>
+        <td>{% for addr in address %}{{addr}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Директор</b></th>
+        <td>{% for direct in director %}{{direct}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Дата основания</b></th>
+        <td>{% for fd in fdate %}{{fd}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Описание</b></th>
+        <td>{% for desc in description %}{{desc}}{% endfor %}</td>
+    </tr>
+</table>
+<form method="post" align="right">
+{% if user_group != "dispatcher" %}<button name="stuff" value="stuff" class="new"><a href="/staffList/{{companyid}}">Персонал</a></button>{% endif %}
+    {% if user_group != "additor" %}<button name="stuff" value="stuff" class="new"><a href="/carsList/{{companyid}}">Автотранспортные средства</a></button>{% endif %}
+    {% if user_group != "director" %}<button name="back" value="back" class="new"><a href="/companyList/">Назад</a></button>{% endif %}
+    {% if user_group == "director" %}<button name="exit" value="exit" class="new" align="left"><a href="/signOut/">Выход</a></button>{% endif %}
+</form>
+</div>
+</body>
+</html>
+
+
+

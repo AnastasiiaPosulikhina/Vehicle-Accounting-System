@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Добавление нового транспортного средства</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Добавление нового транспортного средства</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="image" class="form__text"></label><h3 align="center">Фотография (название, расширение):&nbsp;<input type="text" name="image" id="image" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="id" class="form__text"></label><h3 align="center">ID транспортного средства:&nbsp;<input type="text" name="id" id="id" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="driverid" class="form__number"></label><h3 align="center">&nbsp;&nbsp;ID водителя:&nbsp;<input size="40" type="text" name="driverid" id="driverid" class="form__input" maxlength="255"></h3>
+        <label for="companyid" class="form__text"></label><h3 align="center">ID компании:&nbsp;<input type="text" name="companyid" id="companyid" class="form__input" size="40" maxlength="255"></h3>
+        <label for="brand_name" class="form__text"></label><h3 align="center">Название марки:&nbsp;<input type="text" name="brand_name" id="brand_name" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="model_type" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;Тип модели:&nbsp;<input type="text" name="model_type" id="model_type" class="form__input" size="40" maxlength="255"></h3>
+        <label for="purchase_date" class="form__text"></label><h3 align="center">Дата приобретения:&nbsp;<input type="text" name="purchase_date" id="purchase_date" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="registration_number" class="form__text"></label><h3 align="center">Государственный регистрационный номер:&nbsp;<input type="text" name="registration_number" id="registration_number" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="technical_inspection_date" class="form__text"></label><h3 align="center">Даты прохождения технического осмотра:&nbsp;<input type="text" name="technical_inspection_date" id="technical_inspection_date" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="next_technical_inspection_date" class="form__text"></label><h3 align="center">Дата следующего технического осмотра:&nbsp;<input type="text" name="next_technical_inspection_date" id="next_technical_inspection_date" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="weight" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вес (кг):&nbsp;<input type="text" name="weight" id="weight" class="form__input" size="40" maxlength="255"></h3>
+        <label for="carrying_capacity" class="form__text"></label><h3 align="center">Грузоподъёмность (кг):&nbsp;<input type="text" name="carrying_capacity" id="carrying_capacity" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="mileage" class="form__text"></label><h3 align="center">Пробег при приобретении (км):&nbsp;<input type="text" name="mileage" id="mileage" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="fuel_consumption_rate" class="form__text"></label><h3 align="center">Норма расхода топлива (л/100км):&nbsp;<input type="text" name="fuel_consumption_rate" id="fuel_consumption_rate" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="oil_consumption_rate" class="form__text"></label><h3 align="center">Норма расхода масла (л/год):&nbsp;<input type="text" name="oil_consumption_rate" id="oil_consumption_rate" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="dtpdate" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Дата ДТП:&nbsp;<input type="text" name="dtpdate" id="dtpdate" class="form__input" size="40" maxlength="255"></h3>
+        <label for="description" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Описание:&nbsp;<input type="text" name="description" id="description" class="form__input" size="40" maxlength="255"></h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Добавить</button>
+        <button name="back" value="back" class="new"><a href="/carsList/{{companyid}}">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

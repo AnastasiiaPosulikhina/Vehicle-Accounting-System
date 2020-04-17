@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Добавление нового работника предприятия</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Добавление нового работника предприятия</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ФИО:&nbsp;<input type="text" name="name" id="name" class="form__input" size="40" maxlength="255"></h3>
+        <label for="id" class="form__number"></label><h3 align="center">Табельный номер:&nbsp;<input size="40" type="text" name="id" id="id" class="form__input" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="registration_address" class="form__text"></label><h3 align="center">Адрес регистрации:&nbsp;<input type="text" name="registration_address" id="registration_address" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="birthdate" class="form__text"></label><h3 align="center">Дата рождения:&nbsp;<input type="text" name="birthdate" id="birthdate" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="mobile_phone_number" class="form__text"></label><h3 align="center">&nbsp;Мобильный телефон:&nbsp;<input type="text" name="mobile_phone_number" id="mobile_phone_number" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="hiring_date" class="form__text"></label><h3 align="center">Дата принятия на работу:&nbsp;<input type="text" name="hiring_date" id="hiring_date" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="firing_date" class="form__text"></label><h3 align="center">&nbsp;&nbsp;Дата увольнения:&nbsp;<input type="text" name="firing_date" id="firing_date" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="driver_license_number" class="form__text"></label><h3 align="center">Номер водительского удостоверения:&nbsp;<input type="text" name="driver_license_number" id="driver_license_number" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="position" class="form__text"></label><h3 align="center">Должность:&nbsp;<input type="text" name="position" id="position" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="companyid" class="form__text"></label><h3 align="center">ID компании:&nbsp;<input type="text" name="companyid" id="companyid" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Добавить</button>
+        <button name="back" value="back" class="new"><a href="/staffList/{{companyid}}">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

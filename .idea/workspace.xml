@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8378e666-9cc8-4d42-af6e-28679adbcd29" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/kursovaya$models.coverage" NAME="models Coverage Results" MODIFIED="1544195555740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs" />
+    <SUITE FILE_PATH="coverage/kursovaya$views.coverage" NAME="views Coverage Results" MODIFIED="1543517573126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs" />
+    <SUITE FILE_PATH="coverage/kursovaya$calculation.coverage" NAME="calculation Coverage Results" MODIFIED="1587134820728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kurs" />
+    <SUITE FILE_PATH="coverage/kursovaya$settings.coverage" NAME="settings Coverage Results" MODIFIED="1542724221133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kursovaya" />
+    <SUITE FILE_PATH="coverage/kursovaya$urls.coverage" NAME="urls Coverage Results" MODIFIED="1542725194318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kursovaya" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="321994030">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="90" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.1" value="20" />
+          <entry key="project.open.time.10" value="8" />
+          <entry key="project.open.time.11" value="8" />
+          <entry key="project.open.time.12" value="8" />
+          <entry key="project.open.time.13" value="9" />
+          <entry key="project.open.time.14" value="8" />
+          <entry key="project.open.time.148" value="1" />
+          <entry key="project.open.time.15" value="6" />
+          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="7" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="93" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="_Login_v3" value="1" />
+          <entry key="css" value="18" />
+          <entry key="html" value="312" />
+          <entry key="jpeg" value="1" />
+          <entry key="jpg" value="35" />
+          <entry key="js" value="1" />
+          <entry key="json" value="104" />
+          <entry key="py" value="142" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="18" />
+          <entry key="HTML" value="312" />
+          <entry key="Image" value="36" />
+          <entry key="JSON" value="104" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="142" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="455" />
+          <entry key="html" value="4855" />
+          <entry key="json" value="3141" />
+          <entry key="py" value="4957" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="455" />
+          <entry key="HTML" value="4855" />
+          <entry key="JSON" value="3141" />
+          <entry key="Python" value="4957" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/newCompany.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/deleteCompany.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/editUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="e#1394#1400#0#HTML" expanded="true" />
+                <element signature="e#1497#1503#0#HTML" expanded="true" />
+                <element signature="e#1503#1509#0#HTML" expanded="true" />
+                <element signature="e#1509#1515#0#HTML" expanded="true" />
+                <element signature="e#1515#1521#0#HTML" expanded="true" />
+                <element signature="e#1521#1527#0#HTML" expanded="true" />
+                <element signature="e#1527#1533#0#HTML" expanded="true" />
+                <element signature="e#1533#1539#0#HTML" expanded="true" />
+                <element signature="e#1539#1545#0#HTML" expanded="true" />
+                <element signature="e#1545#1551#0#HTML" expanded="true" />
+                <element signature="e#1551#1557#0#HTML" expanded="true" />
+                <element signature="e#1557#1563#0#HTML" expanded="true" />
+                <element signature="e#1563#1569#0#HTML" expanded="true" />
+                <element signature="e#1569#1575#0#HTML" expanded="true" />
+                <element signature="e#1575#1581#0#HTML" expanded="true" />
+                <element signature="e#1581#1587#0#HTML" expanded="true" />
+                <element signature="e#1587#1593#0#HTML" expanded="true" />
+                <element signature="e#1593#1599#0#HTML" expanded="true" />
+                <element signature="e#1599#1605#0#HTML" expanded="true" />
+                <element signature="e#1605#1611#0#HTML" expanded="true" />
+                <element signature="e#1611#1617#0#HTML" expanded="true" />
+                <element signature="e#1617#1623#0#HTML" expanded="true" />
+                <element signature="e#1623#1629#0#HTML" expanded="true" />
+                <element signature="e#1629#1635#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/carInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="66" column="57" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/pages/users.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="164" selection-start-line="36" selection-start-column="164" selection-end-line="36" selection-end-column="164" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kurs/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-680">
+              <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/kkk/models.py" />
+        <option value="$PROJECT_DIR$/kkk/views.py" />
+        <option value="$PROJECT_DIR$/templates/pages/carslist.html" />
+        <option value="$PROJECT_DIR$/kkk/apps.py" />
+        <option value="$PROJECT_DIR$/dtp.json" />
+        <option value="$PROJECT_DIR$/templates/pages/register.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/all.json" />
+        <option value="$PROJECT_DIR$/kursovaya.json" />
+        <option value="$PROJECT_DIR$/templates/pages/index.html" />
+        <option value="$PROJECT_DIR$/staffList.json" />
+        <option value="$PROJECT_DIR$/templates/pages/authentication.html" />
+        <option value="$PROJECT_DIR$/kurs/migrations/__init__.py" />
+        <option value="$PROJECT_DIR$/kurs/__init__.py" />
+        <option value="$PROJECT_DIR$/kurs/models.py" />
+        <option value="$PROJECT_DIR$/kurs/forms.py" />
+        <option value="$PROJECT_DIR$/kurs/apps.py" />
+        <option value="$PROJECT_DIR$/templates/pages/sisadmin.html" />
+        <option value="$PROJECT_DIR$/templates/pages/newCompany.html" />
+        <option value="$PROJECT_DIR$/companyList.json" />
+        <option value="$PROJECT_DIR$/stuffList.json" />
+        <option value="$PROJECT_DIR$/templates/pages/newWorker.html" />
+        <option value="$PROJECT_DIR$/templates/pages/deleteWorker.html" />
+        <option value="$PROJECT_DIR$/templates/pages/staffList.html" />
+        <option value="$PROJECT_DIR$/templates/pages/deleteCar.html" />
+        <option value="$PROJECT_DIR$/templates/pages/deleteUser.html" />
+        <option value="$PROJECT_DIR$/templates/pages/companyList.html" />
+        <option value="$PROJECT_DIR$/templates/pages/carsList.html" />
+        <option value="$PROJECT_DIR$/templates/pages/companyInfo.html" />
+        <option value="$PROJECT_DIR$/templates/pages/editUser.html" />
+        <option value="$PROJECT_DIR$/templates/pages/users.html" />
+        <option value="$PROJECT_DIR$/static/company.css" />
+        <option value="$PROJECT_DIR$/templates/pages/carInfo.html" />
+        <option value="$PROJECT_DIR$/templates/pages/newCar.html" />
+        <option value="$PROJECT_DIR$/templates/pages/deleteCompany.html" />
+        <option value="$PROJECT_DIR$/kursovaya/settings.py" />
+        <option value="$PROJECT_DIR$/kursovaya/wsgi.py" />
+        <option value="$PROJECT_DIR$/templates/pages/newuser.html" />
+        <option value="$PROJECT_DIR$/carsList.json" />
+        <option value="$PROJECT_DIR$/kursovaya/urls.py" />
+        <option value="$PROJECT_DIR$/templates/pages/signin.html" />
+        <option value="$PROJECT_DIR$/kurs/views.py" />
+        <option value="$PROJECT_DIR$/users.json" />
+        <option value="$PROJECT_DIR$/calculation.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-54" />
+    <option name="width" value="865" />
+    <option name="height" value="705" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+              <item name="kurs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kursovaya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kursovaya" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kurs/views.py" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\static" />
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\kurs" />
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\kursovaya" />
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\templates\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\static" />
+      <recent name="C:\Users\Nastya\PycharmProjects\kursovaya\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.kursovaya">
+    <configuration name="companyList.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/kursovaya/templates/pages/companyList.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="newCompany.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/kursovaya/templates/pages/newCompany.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="newuser.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/kursovaya/templates/pages/newuser.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="signin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/kursovaya/templates/pages/signin.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="sisadmin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/kursovaya/templates/pages/sisadmin.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="calculation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kursovaya" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kurs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kurs/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kursovaya" type="Python.DjangoServer" factoryName="Django server">
+      <module name="kursovaya" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="kursovaya.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.kursovaya" />
+      <item itemvalue="JavaScript Debug.signin.html" />
+      <item itemvalue="JavaScript Debug.sisadmin.html" />
+      <item itemvalue="JavaScript Debug.newuser.html" />
+      <item itemvalue="JavaScript Debug.companyList.html" />
+      <item itemvalue="JavaScript Debug.newCompany.html" />
+      <item itemvalue="Python.calculation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.calculation" />
+        <item itemvalue="JavaScript Debug.newCompany.html" />
+        <item itemvalue="JavaScript Debug.companyList.html" />
+        <item itemvalue="JavaScript Debug.newuser.html" />
+        <item itemvalue="JavaScript Debug.sisadmin.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8378e666-9cc8-4d42-af6e-28679adbcd29" name="Default Changelist" comment="" />
+      <created>1542201597415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542201597415</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1390" height="747" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22222222" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49774775" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022523" side_tool="true" weight="0.27687296" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3295796" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1951952" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924925" visible="true" weight="0.27687296" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007508" side_tool="true" weight="0.252443" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3295796" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/static/car.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/pages/register.html" />
+    <entry file="file://$PROJECT_DIR$/templates/pages/authentication.html" />
+    <entry file="file://$PROJECT_DIR$/kurs/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/forms.py" />
+    <entry file="file://$PROJECT_DIR$/templates/pages/sisadmin.html" />
+    <entry file="file://$PROJECT_DIR$/kursovaya.json" />
+    <entry file="file://$PROJECT_DIR$/static/1045_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/1047.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/1046.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/2016.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/3002.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/3124.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/3030.jpeg" />
+    <entry file="file://$PROJECT_DIR$/static/signInCar.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursovaya/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursovaya/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/carsList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/companyInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/companyList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="26" column="225" selection-start-line="26" selection-start-column="225" selection-end-line="26" selection-end-column="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/deleteUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/deleteWorker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/newCar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="13" column="460" selection-start-line="13" selection-start-column="460" selection-end-line="13" selection-end-column="460" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/newuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/newWorker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/companyList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9766" lean-forward="true" selection-start-column="9766" selection-end-column="9766" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stuffList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8565" selection-start-column="8565" selection-end-column="8565" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/staffList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/3030.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/deleteCar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/2013.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/2014.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1172" selection-start-column="1172" selection-end-column="1172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursovaya/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursovaya/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1358">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/company.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/newCompany.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/deleteCompany.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/editUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#1394#1400#0#HTML" expanded="true" />
+            <element signature="e#1497#1503#0#HTML" expanded="true" />
+            <element signature="e#1503#1509#0#HTML" expanded="true" />
+            <element signature="e#1509#1515#0#HTML" expanded="true" />
+            <element signature="e#1515#1521#0#HTML" expanded="true" />
+            <element signature="e#1521#1527#0#HTML" expanded="true" />
+            <element signature="e#1527#1533#0#HTML" expanded="true" />
+            <element signature="e#1533#1539#0#HTML" expanded="true" />
+            <element signature="e#1539#1545#0#HTML" expanded="true" />
+            <element signature="e#1545#1551#0#HTML" expanded="true" />
+            <element signature="e#1551#1557#0#HTML" expanded="true" />
+            <element signature="e#1557#1563#0#HTML" expanded="true" />
+            <element signature="e#1563#1569#0#HTML" expanded="true" />
+            <element signature="e#1569#1575#0#HTML" expanded="true" />
+            <element signature="e#1575#1581#0#HTML" expanded="true" />
+            <element signature="e#1581#1587#0#HTML" expanded="true" />
+            <element signature="e#1587#1593#0#HTML" expanded="true" />
+            <element signature="e#1593#1599#0#HTML" expanded="true" />
+            <element signature="e#1599#1605#0#HTML" expanded="true" />
+            <element signature="e#1605#1611#0#HTML" expanded="true" />
+            <element signature="e#1611#1617#0#HTML" expanded="true" />
+            <element signature="e#1617#1623#0#HTML" expanded="true" />
+            <element signature="e#1623#1629#0#HTML" expanded="true" />
+            <element signature="e#1629#1635#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kurs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/carInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="66" column="57" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="164" selection-start-line="36" selection-start-column="164" selection-end-line="36" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

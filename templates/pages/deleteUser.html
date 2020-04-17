@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Блокировка пользователя</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Блокировка пользователя</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username" class="form__text"></label><h3 align="center">Логин:&nbsp;<input type="text" name="username" id="username" class="form__input" size="40" maxlength="255"></h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Заблокировать</button>
+        <button name="back" value="back" class="new"><a href="/users/">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Список автотранспортных предприятий</title>
+</head>
+<body>
+<div id = "content">
+<h2>&nbsp;Список автотранспортных предприятий </h2>
+<table>
+    <tr>
+        <th><b>№ п/п</b></th>
+        <th><b>ID предприятия</b></th>
+        <th><b>Название</b></th>
+    </tr>
+    {% for i in clist.companies %}
+        <tr>
+            <td>{{i.number}}</td>
+            <td>{{i.id}}</td>
+            <td><div class = "button"><a href="/companyInfo/{{i.id}}">{{i.name}}</a></div></td>
+        </tr>
+    {% endfor %}
+</table>
+<form align="right" method="post">
+{% if user_group == "additor" %}<button name="add" value="add" class="new"><a href="/newCompany/">Добавить</a></button>&nbsp;<button name="del" value="del" class="new"><a href="/deleteCompany/">Удалить</a></button>{% endif %}
+    {% if user_group != "director" %}<button name="exit" value="exit" class="new" align="left"><a href="/signOut/">Выход</a></button>{% endif %}
+</form>
+</div>
+</body>
+</html>

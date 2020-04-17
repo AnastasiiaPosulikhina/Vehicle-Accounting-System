@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Список автотранспортных средств предприятия</title>
+</head>
+<body>
+<div id = "content">
+<h2>&nbsp;Список автотранспортных средств предприятия </h2>
+<table>
+
+    <tr>
+        <th><b>ID автотранспортного средства</b></th>
+        <th><b>Название марки</b></th>
+        <th><b>Тип модели</b></th>
+        <th><b>Государственный регистрационный номер</b></th>
+    </tr>
+    {% for i in cars %}
+        <tr>
+            <td><div class = "button"><a href="/carInfo/{{i.id}}">{{i.id}}</a></div></td>
+            <td>{{i.brand_name}}</td>
+            <td>{{i.model_type}}</td>
+            <td>{{i.registration_number}}</td>
+        </tr>
+    {% endfor %}
+</table>
+<form align="right" method="post">
+{% if user_group == "dispatcher" %}<button name="add" value="add" class="new"><a href="/newCar/{{companyid}}">Добавить</a></button>&nbsp;<button name="del" value="del" class="new"><a href="/deleteCar/{{companyid}}">Удалить</a></button>{% endif %}
+    <button name="back" value="back" class="new"><a href="/companyInfo/{{companyid}}">Назад</a></button>
+</form>
+</div>
+</body>
+</html>

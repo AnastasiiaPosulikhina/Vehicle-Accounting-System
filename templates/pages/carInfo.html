@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Транспортное средство</title>
+</head>
+<body>
+<div id = "content">
+<h2>&nbsp;Транспортное средство </h2>
+<table class="new">
+    <tr align = "center">
+        <td align = "center">{% for i in carr %}<div style="background-image: url('{% static i.image %}'); height: 220px; width: auto; background-repeat: no-repeat;"></div>{% endfor %}</td>
+        <td></td>
+    </tr>
+    <tr>
+        <th><b>ID транспортного средства</b></th>
+        <td>{% for i in carr %}{{i.id}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>ID водителя</b></th>
+        <td>{% for i in carr %}{{i.driverid}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Название марки</b></th>
+        <td>{% for i in carr %}{{i.brand_name}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Тип модели</b></th>
+        <td>{% for i in carr %}{{i.model_type}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Дата приобретения</b></th>
+        <td>{% for i in carr %}{{i.purchase_date}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Государственный регистрационный номер</b></th>
+        <td>{% for i in carr %}{{i.registration_number}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Даты прохождения технического осмотра </b></th>
+        <td>{% for i in carr %}{{i.technical_inspection_date}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Дата следующего технического осмотра</b></th>
+        <td>{% for i in carr %}{{i.next_technical_inspection_date}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Вес (кг)</b></th>
+        <td>{% for i in carr %}{{i.weight}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Грузоподъёмность (кг)</b></th>
+        <td>{% for i in carr %}{{i.carrying_capacity}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Пробег при приобретении (км)</b></th>
+        <td>{% for i in carr %}{{i.mileage}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Норма расхода топлива (л/100 км)</b></th>
+        <td>{% for i in carr %}{{i.fuel_consumption_rate}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>Норма расхода масла (л/год)</b></th>
+        <td>{% for i in carr %}{{i.oil_consumption_rate}}{% endfor %}</td>
+    </tr>
+    <tr>
+        <th><b>ДТП (дата, водитель, описание)</b></th>
+        <td width=65%>{% for i in carr %}{{i.dtp.date}}, {{i.dtp.driver}}, {{i.dtp.description}}{% endfor %}</td>
+</table>
+<form align="right" method="post">
+<button name="back" value="back" class="new"><a href="/carsList/{% for i in carr %}{{i.companyid}}{% endfor %}">Назад</a></button>
+</form>
+</div>
+</body>
+</html>

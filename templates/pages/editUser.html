@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Редактирование</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Редактирование информации о пользователе</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="group" class="form__text"></label><h3 align="center">Группа пользователя:&nbsp;<input type="text" name="group" id="group" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="name" class="form__text"></label><h3 align="center">ФИО:&nbsp;<input type="text" name="name" id="name" class="form__input" size="40" maxlength="255"></h3>
+        <label for="username" class="form__text"></label><h3 align="center">Логин:&nbsp;<input type="text" name="username" id="username" class="form__input" size="40" maxlength="255">&nbsp;</h3>
+        <label for="password" class="form__text"></label><h3 align="center">Пароль:&nbsp;<input type="password" name="password" id="password" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;</h3>
+        <label for="user_role" class="form__text"></label><h3 align="center">Роль пользователя:&nbsp;<input type="text" name="user_role" id="user_role" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="companyid" class="form__text"></label><h3 align="center">ID компании:&nbsp;<input type="text" name="companyid" id="companyid" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Изменить</button>
+        <button name="back" value="back" class="new"><a href="/users/">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

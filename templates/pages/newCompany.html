@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Добавление нового автотранспортного предприятия</title>
+</head>
+<body>
+<div id = "content">
+    <h2>&nbsp;Добавление нового автотранспортного предприятия</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="nn" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;№ п/п:&nbsp;<input type="text" name="nn" id="nn" class="form__input" size="40" maxlength="255"></h3>
+        <label for="companyid" class="form__number"></label><h3 align="center">ID предприятия:&nbsp;<input size="40" type="text" name="companyid" id="companyid" class="form__input" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="name" class="form__text"></label><h3 align="center">Название:&nbsp;<input type="text" name="name" id="name" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;</h3>
+        <label for="adress" class="form__text"></label><h3 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Адрес:&nbsp;<input type="text" name="adress" id="adress" class="form__input" size="40" maxlength="255"></h3>
+        <label for="director" class="form__text"></label><h3 align="center">&nbsp;Директор:&nbsp;<input type="text" name="director" id="director" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;</h3>
+        <label for="fdate" class="form__text"></label><h3 align="center">Дата основания:&nbsp;<input type="text" name="fdate" id="fdate" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+        <label for="description" class="form__text"></label><h3 align="center">Описание:&nbsp;<input type="text" name="description" id="description" class="form__input" size="40" maxlength="255">&nbsp;</h3>
+        <p></p>
+        <p align="right"><button name="enter" value="enter" class="new" type="submit">Добавить</button>
+        <button name="back" value="back" class="new"><a href="/companyList/">Назад</a></button></p>
+        {% if login_error %}
+            <label class="error">Попробуйте еще раз!</label>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

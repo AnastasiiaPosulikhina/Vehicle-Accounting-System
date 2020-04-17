@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Вход в систему</title>
+</head>
+<body>
+<div class="header-h1"><h1 align="center">Вход в систему учёта транспортных средств автотранспортного предприятия</h1></div>
+<form method="post" align="center">
+    {% csrf_token %}
+    <label for="username" class="form__text"></label><h3>Логин:&nbsp;&nbsp;&nbsp;<input type="text" name="username" id="username" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+    <label for="password" class="form__text"></label><h3>Пароль:&nbsp;&nbsp;<input type="password" name="password" id="password" class="form__input" size="40" maxlength="255">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+    <p></p>
+    &nbsp;<button name="enter" value="enter" class="new" type="submit">Войти</button>
+    <p align = "center">{{ error }}</p>
+</form>
+<p style="text-align: center;">&nbsp;&nbsp;&nbsp;<img src="{% static  "signInCar.jpg" %}" width="550" height="400" ></p>
+</body>
+</html>

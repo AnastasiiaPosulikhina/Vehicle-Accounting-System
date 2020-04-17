@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static  "company.css" %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Персонал предприятия</title>
+</head>
+<body>
+<div id = "content">
+<h2>&nbsp;Персонал предприятия </h2>
+<table>
+    <tr>
+        <th><b>Табельный номер</b></th>
+        <th><b>ФИО</b></th>
+        <th><b>Адрес регистрации</b></th>
+        <th><b>Дата рождения</b></th>
+        <th><b>Мобильный телефон</b></th>
+        <th><b>Дата принятия на работу</b></th>
+        <th><b>Дата увольнения</b></th>
+        <th><b>Номер водительского удостоверения</b></th>
+        <th><b>Должность</b></th>
+    </tr>
+    {% for i in stuff %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.registration_address}}</td>
+        <td>{{i.birthdate}}</td>
+        <td>{{i.mobile_phone_number}}</td>
+        <td>{{i.hiring_date}}</td>
+        <td>{{i.firing_date}}</td>
+        <td>{{i.driver_license_number}}</td>
+        <td>{{i.position}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<form align="right" method="post">
+{% if user_group == "additor" %}<button name="add" value="add" class="new"><a href="/newWorker/{{companyid}}">Добавить</a></button>&nbsp;<button name="del" value="del" class="new"><a href="/deleteWorker/{{companyid}}">Удалить</a></button>{% endif %}
+    <button name="back" value="back" class="new"><a href="/companyInfo/{{companyid}}">Назад</a></button>
+</form>
+</div>
+</body>
+</html>
