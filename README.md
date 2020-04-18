@@ -1,5 +1,5 @@
 # Vehicle Accounting System
-ITMO Python course project
+ITMO Python 1st course project
 
 Vehicle accounting system for motor vehicle enterprises:
 
